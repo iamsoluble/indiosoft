@@ -131,6 +131,13 @@ p {
   border-radius: 5px;
 }
 
+.reproductor-web::-ms-media-controls-enclosure {
+  max-width: 40vw;
+  padding-right: 1rem;
+  background-color: var(--white-alpha-color);
+  border-radius: 5px;
+}
+
 .radio-arapey h2,
 .radio-turistica h2 {
   font-size: 2vh;
