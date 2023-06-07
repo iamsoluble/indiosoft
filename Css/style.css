@@ -20,6 +20,8 @@
 
   /* Gradientes */
   --gradient-background: linear-gradient( 121.7deg,  rgba(0,0,0,1) 18.1%, rgba(3,3,48,1) 38.6%, rgba(3,5,30,1) 43.1%, rgba(3,3,56,1) 47.3%, rgba(0,0,0,1) 58.4%, rgba(0,0,0,0.98) 81.9% );
+  --gradient-turistica: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,0,0,1) 0%, rgba(215,0,0,1) 35%, rgba(167,0,0,1) 53.2%, rgba(255,0,0,1) 90% );
+  --gradient-arapey: linear-gradient( 114.3deg,  rgba(57,192,255,1) 4.9%, rgba(0,142,210,1) 54.7%, rgba(0,137,200,1) 70.7%, rgba(1,148,217,1) 101.9% );
   --gradient-border: radial-gradient(circle 856px at 10% 20%, rgba(10, 10, 10, 1) 0%, rgba(31, 31, 31, 1) 90%);
   --gradient-text: linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%);
 
@@ -92,3 +94,46 @@ img {
 p {
   line-height: 1.6;
 }
+
+
+
+/****************-COMPONENTS-****************/
+/****************-RADIO ARAPEY-****************/
+.radio-arapey {
+  padding: 0;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: var(--gradient-text);
+}
+
+.radio-turistica {
+  color: var(--white-alpha-color);
+  padding: 0x;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: var(--gradient-turistica);
+}
+
+.reproductor {
+  display: contents;
+}
+
+.reproductor-web::-webkit-media-controls-enclosure {
+  max-width: 40vw;
+  padding-right: 1rem;
+  background-color: var(--white-alpha-color);
+  border-radius: 5px;
+}
+
+.radio-arapey h2,
+.radio-turistica h2 {
+  font-size: 2vh;
+}
+
+
