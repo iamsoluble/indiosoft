@@ -99,34 +99,36 @@ p {
 
 /****************-COMPONENTS-****************/
 /****************-RADIO ARAPEY-****************/
+.radios {
+
+}
+
 .radio-arapey {
-  padding: 0;
-  height: 100px;
-  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
+  height: 100px;
+  position: relative;
   background-image: var(--gradient-text);
 }
 
 .radio-turistica {
-  color: var(--white-alpha-color);
-  padding: 0x;
-  height: 100px;
-  position: relative;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  color: var(--white-alpha-color);
+  padding: 0;
+  height: 100px;
+  position: relative;
   align-items: center;
   background-image: var(--gradient-turistica);
 }
 
-
-.reproductor-web {
-  max-width: 40vw;
-  padding-right: 1rem;
+.reproductor-web::-webkit-media-controls-enclosure {
+  background-color: var(--white-alpha-color);
+  border-radius: 3px;
 }
-
-
 
 .radio-arapey h2,
 .radio-turistica h2 {
