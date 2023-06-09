@@ -7,7 +7,7 @@
   --background-proyects: radial-gradient( circle 773px at 2.3% 96.8%,  rgba(73,88,231,1) 0%, rgba(77,19,124,0.97) 100.3% );
     background-footer:;
   --text-primary: #fff;
-  --text-secondary: #cdcdcd;
+  --text-secondary: #06001A;
   --text-inactive: #cdcdcda6;
   --text-link: #dfbec4;
   --text-invert: #1b1b1b;
@@ -15,7 +15,6 @@
 /* Colores */
 --color-black-alpha: rgba(0, 0, 0, 0.5);
 --color-black: #000000;
---color-border: #06001A;
 --color-gray: #d9d9d9;
 --color-gray-dark: #5a5a5a;
 --color-gray-light: #f4f4f4;
