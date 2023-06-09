@@ -4,18 +4,15 @@
   --background-header:;
   --background-hero:;
   --background-body:;
-  --background-proyects:;
+  --background-proyects: radial-gradient( circle 773px at 2.3% 96.8%,  rgba(73,88,231,1) 0%, rgba(77,19,124,0.97) 100.3% );
     background-footer:;
   --text-primary: #fff;
   --text-secondary: #cdcdcd;
   --text-inactive: #cdcdcda6;
-  --text-link: #ccccff;
+  --text-link: #dfbec4;
   --text-invert: #1b1b1b;
 
-  
-  /* Colores */
 /* Colores */
---color-text-primary: #232323;
 --color-black-alpha: rgba(0, 0, 0, 0.5);
 --color-black: #000000;
 --color-border: #06001A;
@@ -33,7 +30,7 @@
 --color-white: #ffffff;
 
 /* Gradientes */
---background-gradient: radial-gradient(circle farthest-corner at 10% 20%, rgba(0,93,133,1) 0%, rgba(0,181,149,1) 90%);
+--background-gradient: background-image: linear-gradient( 107.2deg,  rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% );
 --turistica-gradient: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,0,0,1) 0%, rgba(215,0,0,1) 35%, rgba(167,0,0,1) 53.2%, rgba(255,0,0,1) 90%);
 --arapey-gradient: linear-gradient(114.3deg, rgba(57,192,255,1) 4.9%, rgba(0,142,210,1) 54.7%, rgba(0,137,200,1) 70.7%, rgba(1,148,217,1) 101.9%);
 --border-gradient: radial-gradient(circle 856px at 10% 20%, rgba(10, 10, 10, 1) 0%, rgba(31, 31, 31, 1) 90%);
@@ -110,13 +107,16 @@ p {
   line-height: 1.6;
 }
 
+svg{
+  width: 100px;
+  height: auto;
+}
+
 
 
 /****************-COMPONENTS-****************/
 /****************-RADIO ARAPEY-****************/
-.radios {
 
-}
 
 .radio-arapey {
   display: flex;
@@ -152,8 +152,25 @@ p {
 
 
 
-.proyects {
-  background-image: var(--background-gradient);
+.contact {
+  background-image: var(--background-proyects);
   width: 100%;
   height: 200px;
+}
+
+.contact {
+  background-image: var(--background-proyects);
+  width: 100%;
+  height: 200px;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-items svg{
+  fill: var(--text-secondary);
 }
