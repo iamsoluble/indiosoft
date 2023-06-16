@@ -1,10 +1,11 @@
 :root {
   /*Custom properties*/
   --background-primary: #1b1b1b;
-  --background-header:;
-  --background-hero:;
-  --background-body:;
-  --background-proyects: radial-gradient( circle farthest-corner at 10% 20%,  rgba(7,18,30,1) 0%, rgba(0,0,0,1) 49.7%, rgba(7,18,30,1) 90% );
+  --background-header: radial-gradient( circle farthest-corner at 10% 20%,  rgba(7,18,30,1) 0%, rgba(0,0,0,1) 49.7%, rgba(7,18,30,1) 90% );
+  --background-hero:
+  --background-body:
+  --background-proyects:
+  --background-contact: 
     background-footer:;
   --text-primary: #fff;
   --text-secondary: #06001A;
@@ -117,7 +118,7 @@ svg{
 /****************-RADIO ARAPEY-****************/
 
 
-.radio-arapey {
+/* .radio-arapey {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -147,7 +148,7 @@ svg{
 .radio-arapey h2,
 .radio-turistica h2 {
   font-size: 2vh;
-}
+} */
 
 
 
@@ -167,4 +168,54 @@ svg{
 .contact-items svg{
 fill: var(--text-link);
 }
+
+
+/*---------Utilities----------*/
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: var(--max-width);
+}
+
+/*----------Site Styles---------*/
+.header {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0.5rem;
+  width: 100%;
+  height: var(--header-height);
+  background-image: var(--background-header);
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.menu-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: hidden;
+  background: none;
+}
+
+.menu-btn svg {
+  width: 30px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  fill: white;
+}
+
 
