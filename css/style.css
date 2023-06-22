@@ -199,7 +199,7 @@ fill: var(--text-link-hover);
 
 .menu {
   background-color: rgba(0, 0, 0, 0.853);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(36px);
   position: fixed;
   left: 0;
   bottom: var(--header-height);
