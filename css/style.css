@@ -228,15 +228,15 @@ fill: var(--text-link-hover);
   outline: hidden;
   background: none;
   cursor: pointer;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   align-items: center;
 }
 
 .menu-btn svg {
-  width: inherit;
+  width: 100%;
   height: auto;
-  padding: 0;
+  padding: 0.5;
   margin: 0;
   background-color: transparent;
   fill: var(--text-link);
