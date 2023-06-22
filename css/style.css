@@ -25,7 +25,8 @@
 --color-second: #181b24;
 --color-third-alpha: rgba(167, 167, 167, 0.75);
 --color-third: #a7a7a7;
---color-title: #565656;
+--color-title: #646464;
+--color-logo: #d1e59b;
 --color-white-alpha: rgba(255, 255, 255, 0.5);
 --color-white: #ffffff;
 
@@ -35,7 +36,7 @@
 --text-gradient: linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%);
 
   /* Tipografía */
-  --font: "Roboto slab", sans-serif;
+  --font: 'Inter', sans-serif;
 
   /* Diseño */
   --header-height: 3rem;
@@ -80,22 +81,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 h1 {
-  font-size: 2rem;
-}
-h2 {
   font-size: 1.5rem;
 }
-h3 {
+h2 {
   font-size: 1.25rem;
 }
-h4 {
+h3 {
   font-size: 1rem;
 }
-h5 {
+h4 {
   font-size: 0.85rem;
 }
-h6 {
+h5 {
   font-size: 0.7rem;
+}
+h6 {
+  font-size: 0.6rem;
 }
 
 /* Imágenes */
@@ -185,14 +186,15 @@ fill: var(--text-link-hover);
 }
 
 /*---------------Menú-----------------*/
-
 .logo {
-padding-top: 0.2rem;
+  padding-top: .1rem;
 }
 
 .logo a {
-  color: var(--color-title);
   pointer-events: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-logo);
 }
 
 .menu {
@@ -225,7 +227,7 @@ padding-top: 0.2rem;
   cursor: pointer;
   width: 25px;
   height: 25px;
-  padding: 0.25rem 1.8rem 0 0;
+  padding: 0.1rem 1.8rem 0 0;
   align-items: center;
 }
 
