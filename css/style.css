@@ -200,7 +200,6 @@ fill: var(--text-link-hover);
 .menu {
   position: fixed;
   bottom: var(--header-height);
-  position: center;
   padding: 0;
   width: 130px;
   display: flex;
@@ -212,15 +211,15 @@ fill: var(--text-link-hover);
 }
 
 .menu a {
+  width: 20vw;
   padding: 0.5rem;
-  font-size: 1.5;
   justify-content: center;
   text-decoration: none;
 }
 
 .menu svg {
   fill: var(--text-link);
-  width: 30px;
+  width: 40px;
 }
 
 
@@ -231,7 +230,6 @@ fill: var(--text-link-hover);
   cursor: pointer;
   width: 25px;
   height: 25px;
-  
   align-items: center;
 }
 
@@ -241,7 +239,7 @@ fill: var(--text-link-hover);
   padding: 0;
   margin: 0;
   background-color: transparent;
-  fill: var(--text-link)
+  fill: var(--text-link);
 }
 
 /* .menu-btn svg:hover, */
