@@ -25,7 +25,7 @@
 --color-second: #181b24;
 --color-third-alpha: rgba(167, 167, 167, 0.75);
 --color-third: #a7a7a7;
---color-title: #343434;
+--color-title: #565656;
 --color-white-alpha: rgba(255, 255, 255, 0.5);
 --color-white: #ffffff;
 
@@ -185,11 +185,23 @@ fill: var(--text-link-hover);
 }
 
 /*---------------Menú-----------------*/
+
+.logo {
+padding-top: 0.2rem;
+}
+
+.logo a {
+  color: var(--color-title);
+  pointer-events: none;
+}
+
 .menu {
   position: fixed;
   right: 0;
   bottom: var(--header-height);
-  width: 60px;
+  padding: 0;
+  width: 50px;
+  border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
   background-image: var(--background-header);
@@ -205,27 +217,31 @@ fill: var(--text-link-hover);
   text-decoration: none;
 }
 
-.menu a:hover {
-  color: var(--text-link-hover);
-}
+
 .menu-btn {
-  padding: 0;
-  margin: 0;
   border: none;
   outline: hidden;
   background: none;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 0.25rem 1.8rem 0 0;
+  align-items: center;
 }
 
 .menu-btn svg {
-  width: 30px;
+  width: inherit;
   height: auto;
   padding: 0;
   margin: 0;
   background-color: transparent;
-  fill: var(--text-link-hover);
+  fill: var(--text-link)
 }
 
+/* .menu-btn svg:hover, */
+.menu-btn svg:hover {
+  fill: var(--text-link-hover)
+}
 
 .menu.is-active{
   opacity: 1;
