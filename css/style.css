@@ -237,7 +237,7 @@ fill: var(--text-link-hover);
 .menu-btn svg {
   width: 100%;
   height: auto;
-  padding-top: 0.21rem;
+  padding-top: 0.23rem;
   margin: 0;
   background-color: transparent;
   fill: var(--text-link);
