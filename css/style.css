@@ -198,7 +198,7 @@ fill: var(--text-link-hover);
 }
 
 .menu {
-  background-color: rgba(0, 0, 0, 0.853);
+  background-color: rgba(0, 0, 0, 0.919);
   backdrop-filter: blur(36px);
   position: fixed;
   left: 0;
