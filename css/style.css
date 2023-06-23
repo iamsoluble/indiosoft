@@ -9,11 +9,14 @@
   --text-primary: #fff;
   --text-secondary: #06001A;
   --text-inactive: #cdcdcda6;
-  --text-link: #9c9e6c;
-  --text-link-hover: #d7d995;
+  --text-link: #b3c3d4;
+  --text-link2: #9c9e6c;
+  --text-link-hover: #9dbddf;
+  --text-link-hover2: #b095d9;
   --text-invert: #1b1b1b;
 
 /* Colores */
+--color-border: 5px solid rgb(6, 6, 6);
 --color-black-alpha: rgba(0, 0, 0, 0.5);
 --color-black: #000000;
 --color-gray: #d9d9d9;
@@ -30,6 +33,10 @@
 --color-white-alpha: rgba(255, 255, 255, 0.5);
 --color-white: #ffffff;
 
+/* Sombras */
+--box-shadow1: 0 0 8px 2px rgba(255, 255, 255, 0.041);
+--box-shadow2: 0 -4px 8px -2px rgba(255, 255, 255, 0.081) inset;
+
 /* Gradientes */
 --background-gradient: 
 --border-gradient: radial-gradient(circle 856px at 10% 20%, rgba(10, 10, 10, 1) 0%, rgba(31, 31, 31, 1) 90%);
@@ -40,6 +47,7 @@
 
   /* Diseño */
   --header-height: 4rem;
+  --header-height4-5: 4.5rem;
   --max-width: 1920px;
 }
 
@@ -169,6 +177,8 @@ svg{
   backdrop-filter: blur(6px);
 }
 
+
+
 .contact a {
   display: flex;
   justify-content: center;
@@ -177,13 +187,14 @@ svg{
 }
 
 .contact-items svg{
-fill: var(--text-link);
+fill: var(--color-gray-dark);
 margin-right: 0;
 }
 
 .contact-items svg:hover{
 fill: var(--text-link-hover);
 }
+
 
 /*---------------Menú-----------------*/
 .logo {
@@ -194,7 +205,7 @@ fill: var(--text-link-hover);
   pointer-events: none;
   font-weight: 600;
   font-size: 1.5rem;
-  color: var(--color-logo);
+  color: var(--color-white);
 }
 
 .menu {
@@ -202,7 +213,7 @@ fill: var(--text-link-hover);
   backdrop-filter: blur(36px);
   position: fixed;
   left: 0;
-  bottom: var(--header-height);
+  bottom: var(--header-height4-5);
   padding: 0;
   width: 100%;
   height: var(--header-height);
@@ -221,7 +232,7 @@ fill: var(--text-link-hover);
 }
 
 .menu svg {
-  fill: var(--color-white);
+  fill: var(--text-link);
   width: 35px;
 }
 
@@ -243,7 +254,15 @@ fill: var(--text-link-hover);
   padding-top: 0.23rem;
   margin: 0;
   background-color: transparent;
-  fill: var(--text-link);
+  fill: var(--color-gray-dark);
+  animation: blink 6s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+  
 }
 
 /* .menu-btn svg:hover, */
