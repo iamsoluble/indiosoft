@@ -1,6 +1,7 @@
 :root {
   /*Custom properties*/
   --background-primary: rgb(5, 5, 5);
+  --background-primary-light: rgb(45, 45, 45);
   --background-header: radial-gradient( circle farthest-corner at 10% 20%,  rgb(0, 0, 0) 0%, rgba(0,0,0,1) 49.7%, rgb(4, 6, 17) 90% );
   --background-body:
   --background-proyects:
@@ -184,15 +185,19 @@ svg{
   justify-content: center;
   align-items: center;
   padding: 0;
+  pointer-events: none;
 }
 
-.contact-items svg{
-fill: var(--color-gray-dark);
-margin-right: 0;
+.contact-items svg {
+  fill: var(--background-primary-light);
+  margin-right: 0;
+  width: 45%;
+  pointer-events: all;
 }
 
-.contact-items svg:hover{
-fill: var(--text-link-hover);
+.contact-items svg:hover {
+  fill: var(--text-link-hover);
+  width: 48%;
 }
 
 
